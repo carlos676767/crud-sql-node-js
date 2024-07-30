@@ -31,19 +31,18 @@ class reqHttp {
   async getPersons(){
     try {
       const httpGet = await axios.get(this.url)
-      console.log(httpGet);
+      console.log(httpGet.data);
     } catch (error) {
       console.log(error)
     }
   }
 
-
   async updateDateOfBirth(){
-
+    
   }
 }
 
 // new reqHttp("http://localhost:8080/cadastrarUser").cadastrarUse()
 // new reqHttp("http://localhost:8080/deletePersons").deleteUsers()
-new reqHttp("http://localhost:8080/getPerson").getPersons()
+// new reqHttp("http://localhost:8080/getPerson").getPersons()
 
